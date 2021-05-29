@@ -1,0 +1,197 @@
+/* h1 { */
+  /* background: linear-gradient(transparent 70%, #a7d6ff 70%); */
+
+  /* color: #010079;
+  text-shadow: 0 0 5px white;
+  padding: 0.3em 0.5em;
+  background: -webkit-repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+  background: repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+} */
+/* h1 {
+  position: relative;
+  padding: 0.25em 1em;
+  border: solid 2px black;
+  border-radius: 3px 0 3px 0;
+}
+
+h1:before, h1:after {
+  content: '';
+  position: absolute;
+  width:10px;
+  height: 10px;
+  border: solid 2px black;
+  border-radius: 50%;
+}
+
+h1:after {
+  top:-12px;
+  left:-12px;
+}
+h1:before {
+  bottom:-12px;
+  right:-12px;
+} */
+h1 {
+  color: #ff8800;
+  position: relative;
+  padding: 0.25em 0;
+}
+h1:after {
+  content: "";
+  display: block;
+  height: 4px;
+  background: -webkit-linear-gradient(to right, rgb(230, 90, 90), transparent);
+  background: linear-gradient(to right, rgb(230, 90, 90), transparent);
+}
+
+
+/* .ribbon1 {
+  display: inline-block;
+  position: relative;
+  height: 45px;
+  text-align: center;
+  box-sizing: border-box;
+  -webkit-transform: rotate(-10deg) skew(-17deg,4deg);
+  transform: rotate(-10deg) skew(-17deg,4deg);
+}
+.ribbon1:before {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: #eb9920;
+  bottom: -7px;
+  left: -15px;
+  z-index: -2;
+}
+.ribbon1:after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: #eb9920;
+  bottom: -10px;
+  right: -25px;
+  z-index: -2;
+}
+.ribbon1 h3 {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 0 20px;
+  line-height: 45px;
+  font-size: 18px;
+  color: white;
+  background: #f8aa37;
+}
+.ribbon1 h3:before {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 0;
+  border: none;
+  border-bottom: solid 7px transparent;
+  border-right: solid 25px #c6821e;
+}
+.ribbon1 h3:after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  right: 0;
+  border: none;
+  border-bottom: solid 10px transparent;
+  border-left: solid 15px #c6821e;
+}*/
+
+.balloon-left {
+    position: relative;
+    display: inline-block;
+    margin: 1.5em 0 1.5em 15px;
+    padding: 0 5px;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    background: #ff8800;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+  .balloon-left:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-right: 15px solid #ff8800;
+    z-index: 0;
+  } 
+
+p.item1{
+    color: rgb(243, 36, 150);
+    font-size: 20px;
+}
+p.item2{
+    color: rgb(25, 90, 231);
+    font-size: 20px;
+}
+
+  body{
+    background-image: url("picture3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "YuGothic M";
+    text-align: center;
+       } 
+
+       hr {
+        border-width: 5px 0px 0px 0px; /*太さ */
+        width: 500px;
+        border-style: groove;  /* 線種 */
+        border-color: #010079;
+           }
+
+ @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+
+ /* Google Fonts 読み込み */
+ .container {
+  width: 100%;
+  height: 25vh;
+  /* background-color: #cce7ff; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 時計の共通スタイル */
+.clock {
+  font-family: 'Share Tech Mono', monospace;
+  color: #daf6ff;
+  text-shadow: 0 0 15px #0905f8;
+  /* line-height: 1.2; */
+  line-height: 0.5;
+  text-align: center;
+}
+
+/* 日付のスタイル */
+.clock-date {
+  font-size: 35px;
+}
+
+/* 時間のスタイル */
+.clock-time {
+  font-size: 65px;
+}
+
+/* 文字サイズ調整 */
+@media screen and (max-width: 500px) {
+  .clock-date {
+    font-size: 5vw;
+  }
+  .clock-time {
+    font-size: 20vw;
+  }
+}
